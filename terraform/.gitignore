@@ -1,0 +1,16 @@
+# Ignore Terraform working dir
+.terraform/
+
+# Ignore Terraform state files (contain sensitive infra data)
+terraform.tfstate
+terraform.tfstate.backup
+crash.log
+
+# Ignore override files
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+
+# Optional: ignore provider binaries
+*.zip
