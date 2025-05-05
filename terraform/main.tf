@@ -12,8 +12,7 @@ resource "aws_s3_bucket" "infra_logs" {
   tags = {
     Name        = "InfraLogBucket"
     Environment = "Dev"
-    Owner       = "Maksim"
-    # Deliberately missing CostCenter tag for testing
+    Owner       = "Name"
   }
 }
 
@@ -30,7 +29,7 @@ resource "aws_instance" "web_server" {
   tags = {
     Name        = "InfraLabEC2"
     Environment = "Dev"
-    Owner       = "Maksim"
+    Owner       = "Name"
     CostCenter  = "IT"
   }
 }
